@@ -33,6 +33,7 @@ export default class FormValidation extends Component {
         let { manvValid, tennvVaid, emailValid } = this.state;
 
         switch (name) {
+            
             case "manv":
                 manvValid = message === "" ? true : false;
                 if (value && value.length < 4) {
