@@ -28,6 +28,9 @@ export default class FormValidation extends Component {
         );
     };
     handleError = event => {
+      
+
+
         let { name, value } = event.target;
         let message = value === "" ? name + " không được rỗng" : "";
         let { manvValid, tennvVaid, emailValid } = this.state;
